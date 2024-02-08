@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+.cf:before,
+.cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+}
+  
+.cf:after {
+      clear: both;
+}
+main{
+    width:955px;
+    margin:20px auto;
+    border: 1px solid #000;
+    background-image: url(../img/grid.png);
+}
+main header, main footer{
+    background-color:grey;
+    width:915px;
+    margin-left:20px;
+}
+.blog{
+    width:667px;
+    background-color:grey;
+    margin-left:20px;
+}
+aside{
+    width:288px;
+    background-color:grey;
+    margin-left:20px;
+}
