@@ -24,16 +24,24 @@ main{
 }
 main header, main footer{
     background-color:grey;
-    width:915px;
-    margin-left:20px;
+    /*width:915px*/
+    width:95.8115%;
+    /*margin-left:20px*/
+    margin-left:2.0942%;
+    float:left;
 }
-.blog{
+section#primary{
     width:667px;
+    /*width:69.8429%;*/
     background-color:grey;
-    margin-left:20px;
+    margin-left:2.0942%;
+    float:left;
 }
-aside{
-    width:288px;
+section#secondary{
+    width:233px;
+    /*width:23.3507%;*/
     background-color:grey;
-    margin-left:20px;
+    margin-left:15px;
+    /*margin-left:1.5706%;*/
+    float:left;
 }
