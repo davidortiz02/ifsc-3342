@@ -1,0 +1,13 @@
+body{
+    width: 955px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    /*background-image: url("grid.png");
+    background-repeat:repeat-y;*/
+}
+body h1{
+    background-color:gray;
+    text-align:center;
+    font-size:48px;
+    font-family:Verdana;
+}
