@@ -22,7 +22,7 @@ main{
     border: 1px solid #000;
     background-image: url(../img/grid.png);
 }
-main header, main footer{
+header.primary, footer.primary{
     background-color:grey;
     /*width:915px*/
     width:95.8115%;
@@ -30,18 +30,18 @@ main header, main footer{
     margin-left:2.0942%;
     float:left;
 }
-section#primary{
-    width:667px;
-    /*width:69.8429%;*/
+#blog{
+    /*width:667px;*/
+    width:69.8429%;
     background-color:grey;
     margin-left:2.0942%;
     float:left;
 }
 section#secondary{
-    width:233px;
-    /*width:23.3507%;*/
+    /*width:233px;*/
+    width:24.3579%;
     background-color:grey;
-    margin-left:15px;
-    /*margin-left:1.5706%;*/
+    /*margin-left:15px;*/
+    margin-left:1.5706%;
     float:left;
 }
