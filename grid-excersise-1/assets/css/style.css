@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+.cf:before,
+.cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+}
+  
+.cf:after {
+      clear: both;
+}
+main{
+    width:955px;
+    margin:20px auto;
+    border: 1px solid #000;
+    background-image: url(../img/grid.png);
+}
+header.primary, footer.primary{
+    background-color:grey;
+    /*width:915px*/
+    width:95.8115%;
+    /*margin-left:20px*/
+    margin-left:2.0942%;
+    float:left;
+}
+#blog{
+    /*width:667px;*/
+    width:69.8429%;
+    background-color:grey;
+    margin-left:2.0942%;
+    float:left;
+}
+section#secondary{
+    /*width:233px;*/
+    width:24.3579%;
+    background-color:grey;
+    /*margin-left:15px;*/
+    margin-left:1.5706%;
+    float:left;
+}
