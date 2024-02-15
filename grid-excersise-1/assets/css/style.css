@@ -17,31 +17,38 @@ html {
       clear: both;
 }
 main{
-    width:955px;
-    margin:20px auto;
+    width: 60vw;
     border: 1px solid #000;
-    background-image: url(../img/grid.png);
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns:repeat(15, [col] auto);
+    grid-template-rows: 200px auto 75px;
+    margin: auto;
+    padding: 20px;
 }
-header.primary, footer.primary{
+header.primary{
     background-color:grey;
-    /*width:915px*/
-    width:95.8115%;
-    /*margin-left:20px*/
-    margin-left:2.0942%;
-    float:left;
+    grid-column: 1 / 17;
+    grid-row: 1 / 2;
+}
+#content{
+    display:grid;
+    grid-column: 1/ 17;
+    grid-row: 2 / 3;
+    gap: 17px;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
 }
 #blog{
-    /*width:667px;*/
-    width:69.8429%;
-    background-color:grey;
-    margin-left:2.0942%;
-    float:left;
+    background-color:rgba(53, 50, 56, 0.849);
+    grid-column: 1 / 14;
 }
-section#secondary{
-    /*width:233px;*/
-    width:24.3579%;
+aside{
+    background-color: rgba(69, 73, 69, 0.452);
+    grid-column: 14 / 17;
+}
+footer.primary{
+    grid-row: 3 / 4;
+    grid-column: 1 / 17;
     background-color:grey;
-    /*margin-left:15px;*/
-    margin-left:1.5706%;
-    float:left;
 }
