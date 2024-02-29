@@ -1,5 +1,6 @@
 :root{
   --primary-text-color: #000;
+  --primary-font-size: larger;
 }
 
 html{
@@ -98,13 +99,14 @@ img{
 
 #description{
   text-align:center;
-  font-size:1.2em;
+  font-size:var(--primary-font-size);
   color:var(--primary-text-color);
 }
 
 dl{
   display:grid;
   grid-template-columns: 1fr 1fr;
+  text-decoration:none;
 }
 
 dt{
@@ -112,11 +114,14 @@ dt{
   padding: 11px 0px;
   font-weight:800;
   text-align:left;
+  font-size:larger;
+  text-decoration:underline;
 }
 dd{
   grid-column:2 / 3;
   padding: 11px 0px;
   text-align:right;
+  font-size:var(--primary-font-size);
 }
 
 .related-links{
@@ -137,22 +142,62 @@ dd{
   text-align:center;
 }
 #github:before{
-  content: url('../img/github-mark-white-small.png');
-  padding-right:2px;
-  padding-top:2px;
+  content: url('../img/github-mark-white-smaller.png');
 }
 #linkedin:after{
-  content: url('../img/LI-In-Bug.png');
-  padding-right:2px;
-  padding-top:2px;
+  content: url('../img/LI-In-Bug-small.png');
+  padding-left:2px;
+}
+
+#skills li{
+  font-size:var(--primary-font-size);
 }
 
 #skills ul{
+  display:grid;
+  gap:7px;
+  padding:0px;
+  grid-template-columns: repeat(3, auto);
+  grid-template-areas:
+      "cpp cs python"
+      "java html php"
+      "...... css ......"
+      "solo solo solo"
+      "team team team"
+      "leader leader leader"
+  ;
   list-style-type:none;
-}
-#skills li{
-  padding: 2px 0px;
   text-align:center;
+}
+#cpp{
+  grid-area:cpp;
+}
+#cs{
+  grid-area:cs;
+}
+#python{
+  grid-area:python
+}
+#java{
+  grid-area:java;
+}
+#html{
+  grid-area:html;
+}
+#php{
+  grid-area:php;
+}
+#css{
+  grid-area:css;
+}
+#solo{
+  grid-area:solo;
+}
+#team{
+  grid-area:team;
+}
+#leader{
+  grid-area:leader;
 }
 
 .job *[itemprop="jobTitle"],
