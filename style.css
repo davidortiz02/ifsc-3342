@@ -1,3 +1,9 @@
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
 body{
     width: 955px;
     margin: 20px auto;
@@ -6,8 +12,19 @@ body{
     background-repeat:repeat-y;*/
 }
 body h1{
-    background-color:gray;
     text-align:center;
     font-size:48px;
     font-family:Verdana;
+    font-weight:400;
+}
+.course-info{
+    text-align:center;
+}
+svg{
+    max-width:100px;
+    max-height:100px;
+}
+
+ul ul{
+    list-style-type:none;
 }
