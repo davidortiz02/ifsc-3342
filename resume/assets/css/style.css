@@ -276,3 +276,9 @@ main{
 .page-title{
   grid-area:page-title;
 }
+
+/* end of mobile design, next up is tablet */
+
+@media all and (min-width:558px){
+
+}
