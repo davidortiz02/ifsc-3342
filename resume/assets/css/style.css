@@ -45,7 +45,9 @@ nav{
 
 nav ul{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1 fr;
+  gap: 10px;
+  grid-template-rows: repeat(4, [row] auto);
   padding: 4% 4% 4% 4%;
 }
 
@@ -63,6 +65,7 @@ nav a:link, nav a:visited{
   color:#fff;
   font-size:0.85em;
   text-align:center;
+  border-radius:30px;
 }
 nav a:hover{
   background-color: #fff;
@@ -74,16 +77,6 @@ nav a:active{
   color:#3d3d3d;
 }
 
-/* ROUNDED CORNERS FOR OUTER BOXES*/
-.a{
-  border-top-left-radius:30px;
-  border-bottom-left-radius:30px;
-}
-
-.d{
-  border-top-right-radius:30px;
-  border-bottom-right-radius:30px;
-}
 
 /* end of navigational css */
 
@@ -336,4 +329,38 @@ main{
   #education span, #courses li{
     font-size: var(--primary-font-size);
   }
+
+  #courses ul{
+    display:grid;
+    grid-template-columns: repeat(2, [col] auto);
+  }
+  
+  #courses #firstcol{
+    grid-column: 1;
+  }
+  #courses #secondcol{
+    grid-column: 2;
+  }
+
+  nav ul{    
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 4% 4% 4% 4%;
+  gap: 0px;
+  }
+  nav a:link, nav a:visited{
+    border-radius:0px;
+  }
+
+  /* ROUNDED CORNERS FOR OUTER BOXES*/
+  .a{
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+  }
+
+  .d{
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px;
+  }
+
 }
