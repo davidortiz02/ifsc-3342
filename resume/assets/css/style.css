@@ -280,6 +280,11 @@ main{
 /* end of mobile design, next up is tablet */
 
 @media all and (min-width:768px){
+
+  :root{
+    --primary-font-size: 20px;
+  }
+
   .container{
     max-width: 1024px;
   }
@@ -288,22 +293,47 @@ main{
     grid-area: description;
   }
 
+  img{
+    grid-area: image;
+    max-width: 95%;
+    max-height: 95%;
+  }
+
   .details{
     grid-area: details;
   }
-  #about{
-    display: grid;
-    grid-template-columns: repeat(4, [col] auto);
-    grid-template-rows: repeat(3, [row] auto);
+
+  .related-links{
+    grid-area: relatedLinks;
   }
 
-  img{
-    grid-column: col / span 2;
-    grid-row: row / span 2;
+  .bio{
+    display:grid;
+    grid-template-columns: 8rem, 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image description"
+    ;
   }
 
-  #description{
-    grid-column: col 3 / span 2;
-    grid-row: row;
+  .related-links{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 50px;
+    font-size: 1.2em;
+  }
+
+  main{
+    grid-template-areas:
+    "page-title page-title"
+    "about about"
+    "education courses"
+    "experience skills"
+    ;
+  }
+
+  #education span, #courses li{
+    font-size: var(--primary-font-size);
   }
 }
