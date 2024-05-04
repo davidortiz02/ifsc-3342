@@ -1,0 +1,39 @@
+html{
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+.container{  
+    max-width:430px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#F6E8CD;
+}
+
+.title-image {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#DBB78D;
+    font-size:40px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px;
+    font-family:'K2D';
+  }
