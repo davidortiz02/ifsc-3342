@@ -114,4 +114,37 @@ main p{
     .centered{
         font-size:3.4em;
     }
+    .info{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap: 8px;
+    }
+    .google-maps{
+        margin:auto;
+        width:50%;
+    }
+}
+@media all and (min-width:1024px){
+    .container{
+        max-width:100%;
+    }
+    main{
+        display:grid;
+        gap:30px;
+        grid-template-columns:1fr 20em;
+        grid-template-areas:
+        "mainInfo map";
+        
+    }
+    #main-info{
+        grid-area:mainInfo;
+    }
+    #id{
+        grid-area:map;
+    }
+    .google-maps{
+        margin:0;
+        width:100%;
+
+    }
 }
