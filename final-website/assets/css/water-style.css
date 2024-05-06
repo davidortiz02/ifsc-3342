@@ -81,96 +81,38 @@ main{
 }
 main h1{
     text-align:center;
-    color:var(--primary-header-color);
+    color:#466B0B;
     font-size:2.2em;
 }
 main p{
-    color:var(--primary-text-color);
+    color:#156E0D;
     font-size:1.3em;
     line-height:1.7;
-    text-align:justify;
 }
-main h2{
-    text-align:center;
-    color:var(--primary-header-color);
-    font-size:2em;
-}
-main ul{
-    padding:0px;
-    list-style-type:none;
-    line-height:1.6;
-    text-align:center;
-    color:var(--primary-text-color);
-}
-main ul li{
-    font-size:1.3em;
-    background-color: #f7d592;
-    width:auto;
-    padding:9px 19px;
-    margin:0 auto;
-    border-radius: 22px;
-}
-
-/* Tablet */
+/*Tablet*/
 @media all and (min-width:430px){
     .container{
         max-width:1024px;
-    }
-    main{
-        padding:35px;
     }
     img{
         max-width:100%;
         height:auto;
     }
     .centered{
-        font-size:2.8em;
+        font-size:3.4em;
     }
     .dropbtn{
         display:none;
     }
     .dropdown-content{
         display:flex;
-        position:relative;
+        position: relative;
     }
     .dropdown-content a{
-        background-color:#4CAF50;
+        background-color: #4CAF50;
         text-decoration:underline;
     }
-    .centered{
-        font-size:3.4em;
-    }
-    .hike-trails{
-        display:grid;
-        gap: 7px;
-        padding:0px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    }
-    .bike-trails{
-        display:grid;
-        gap: 7px;
-        padding:0px;
-        grid-template-columns: 1fr 1fr;
-    }
-    main ul li{
-        font-size:1.4em;
-    }
-}
-
-/*Desktop*/
-@media all and (min-width:1024px){
-    .container{
-        max-width:100%;
-    }
-    .title-image{
-        flex-direction:column-reverse;
-    }
-    .hike-trails{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-    .hike-trails li:last-child{
-        grid-column:2;
+    main{
+        padding:20px;
     }
 }

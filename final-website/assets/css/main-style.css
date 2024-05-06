@@ -88,7 +88,7 @@ main p{
 .google-maps{
     width:100%;
 }
-
+/*Tablet*/
 @media all and (min-width:430px){
     .container{
         max-width:1024px;
@@ -96,9 +96,6 @@ main p{
     img{
         max-width:100%;
         height:auto;
-    }
-    .centered{
-        font-size:2.8em;
     }
     .dropbtn{
         display:none;
@@ -124,6 +121,7 @@ main p{
         width:50%;
     }
 }
+/*Desktop*/
 @media all and (min-width:1024px){
     .container{
         max-width:100%;
