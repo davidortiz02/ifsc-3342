@@ -1,6 +1,7 @@
 :root{
     --primary-header-color:#466B0B;
     --primary-text-color:#156E0D;
+    --primary-list-color:#11530b;
 }
 html{
     box-sizing: border-box;
@@ -89,6 +90,17 @@ main p{
     font-size:1.3em;
     line-height:1.7;
 }
+main ol{
+    padding:0px;
+    list-style-position:inside;
+    text-align:center;
+}
+main li{    
+    padding:0px;
+    line-height:1.6;
+    color:var(--primary-list-color);
+    font-size:1.2em;
+}
 /*Tablet*/
 @media all and (min-width:430px){
     .container{
@@ -114,5 +126,34 @@ main p{
     }
     main{
         padding:20px;
+    }
+    article.paddle ol{
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    article.paddle li:last-child{
+        grid-column:span 2;
+        text-align:center;
+    }
+}
+@media all and (min-width:1024px){
+    .container{
+        max-width:100%;
+    }
+    main.container{
+        display:grid;
+        grid-template-columns:30% 70%;
+        grid-template-rows:repeat(2, auto);
+        gap:20px;
+    }
+    img{
+        margin:20px auto;
+    }
+    article.paddle ol{
+        display:grid;
+        grid-template-columns: repeat(3, auto);
+    }
+    article.paddle li:last-child{
+        grid-column:auto;
     }
 }
