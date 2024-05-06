@@ -111,7 +111,7 @@ main p{
         background-color:#4CAF50;
         text-decoration:underline;
     }
-    .dropdown:hover{
-        
+    .centered{
+        font-size:3.4em;
     }
 }

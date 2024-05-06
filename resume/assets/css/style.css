@@ -185,6 +185,7 @@ dd a:visited, a:link{
   gap:7px;
   padding:0px;
   grid-template-columns: repeat(3, auto);
+  
   grid-template-areas:
       "cpp cs python"
       "java html php"
