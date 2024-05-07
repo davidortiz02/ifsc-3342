@@ -98,17 +98,22 @@ main h2{
 main ul{
     padding:0px;
     list-style-type:none;
-    line-height:1.6;
+    line-height:2;
     text-align:center;
     color:var(--primary-text-color);
+}
+.hike-trails{
+    display:grid;
+    grid-template-columns:1fr;
 }
 main ul li{
     font-size:1.3em;
     background-color: #f7d592;
-    width:auto;
-    padding:9px 19px;
+    width:auto 0;
+    padding:9px;
     margin:0 auto;
     border-radius: 22px;
+    display:inline-block;
 }
 
 /* Tablet */
