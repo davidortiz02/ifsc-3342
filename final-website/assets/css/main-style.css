@@ -1,3 +1,8 @@
+:root{
+    --primary-header-color:#466B0B;
+    --primary-text-color:#156E0D;
+    --primary-list-color:#11530b;
+}
 html{
     box-sizing: border-box;
 }
@@ -87,6 +92,13 @@ main p{
 }
 .google-maps{
     width:100%;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    color:var(--primary-list-color);
+    font-size:1em;
 }
 /*Tablet*/
 @media all and (min-width:430px){

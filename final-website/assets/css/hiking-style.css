@@ -1,6 +1,7 @@
 :root{
     --primary-header-color:#466B0B;
     --primary-text-color:#156E0D;
+    --primary-list-color:#11530b;
 }
 html{
     box-sizing: border-box;

@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main-style.css" media="all">
     <link href='https://fonts.googleapis.com/css?family=K2D' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Document</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVH5YBE867"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SVH5YBE867');
+</script>
 <body>
     <header class="container">
         <nav>
@@ -16,6 +27,7 @@
                     <a href="#">Home</a>
                     <a href="water.html">Fishing</a>
                     <a href="hiking.html">Trails</a>
+                    <a href="../index.html">My Homepage</a>
                 </div>
             </div>
         </nav>
@@ -49,11 +61,17 @@
         </div>
         <div class="google-maps" id="maps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11013.858186140229!2d-92.49839534852406!3d34.845179271552645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cd619225e249e9%3A0x8e224019b93a91cf!2s9600%20AR-300%2C%20Roland%2C%20AR%2072135!5e0!3m2!1sen!2sus!4v1714872270287!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>
-                9600 Highway 300<br>
-                Roland, AR 72135<br>
-                501-868-5806
-            </p>
+            <ul itemscope itemtype="http://schema.org/PostalAddress">
+                <li itemprop="streetAddress">
+                    9600 Highway 300
+                </li>
+                <li itemprop="addressLocality">
+                    Roland, AR 72135
+                </li>
+                <li itemprop="telephone" href="tel:501-868-5806">
+                    501-868-5806
+                </li>
+            </ul>
         </div>
     </main>
 </body>
