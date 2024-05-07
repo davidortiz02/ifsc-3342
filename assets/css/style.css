@@ -1,3 +1,11 @@
+:root{
+    --primary-background-color:#80878a;
+    --secondary-background-color:#1e53e4;
+    --primary-text-color:rgb(0,0,0);
+    --secondary-text-color:#E4AF1E;
+    --tertiary-text-color:#8A8380;
+    --list-font-size:1.2em;
+}
 *, 
 *:before, 
 *:after {
@@ -8,6 +16,7 @@ body{
     width: 955px;
     margin: 20px auto;
     border: 1px solid #000;
+    background-color: var(--primary-background-color);
     /*background-image: url("grid.png");
     background-repeat:repeat-y;*/
 }
@@ -20,11 +29,21 @@ body h1{
 .course-info{
     text-align:center;
 }
-svg{
-    max-width:100px;
-    max-height:100px;
-}
-
-ul ul{
+ul{
     list-style-type:none;
+    display:grid;
+    gap: 15px 10px;
+    grid-template-columns:auto auto;
+}
+ul a, ul a:visited{
+    background-color:var(--secondary-background-color);
+    font-size:var(--list-font-size);
+    text-decoration: none;
+    color:var(--secondary-text-color);
+    padding:5px 10px;
+    border-radius: 12px;
+}
+li{
+    color:var(--primary-text-color);
+    font-size:var(--list-font-size);
 }
